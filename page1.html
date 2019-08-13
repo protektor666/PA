@@ -1,0 +1,2019 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Мониторинг ВС РФ</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <link rel="stylesheet" href="style.css">
+    <script>
+// Определяем переменную map
+var map;
+
+// Функция initMap которая отрисует карту на странице
+function initMap() {
+
+  // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
+  map = new google.maps.Map(document.getElementById('map'), {
+    // При создании объекта карты необходимо указать его свойства
+    // center - определяем точку на которой карта будет центрироваться
+    center: {lat: 55.760186, lng: 37.618711},
+    // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
+    zoom: 5,
+
+    // Добавляем свои стили для отображения карты
+    styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-50},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+  });
+
+
+
+    //----------------------------------------------
+var markerRUS2 = new google.maps.Marker({
+
+    
+   position: {lat:64.7291   , lng:   177.5167        },
+
+      
+      map: map,
+
+      
+      title: '  Анадырь ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS2 = '  <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D10%26a%3D0%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2590%25D0%25BD%25D0%25B0%25D0%25B4%25D1%258B%25D1%2580%25D1%258C%2520%26n%3Dzzz%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>    ';
+  
+  var infowindowRUS2 = new google.maps.InfoWindow({
+     content: contentStringRUS2,
+     maxWidth: 500
+  });
+markerRUS2.addListener('click', function() {
+    infowindowRUS2.open(map, markerRUS2);
+  });//---------------------------------
+var markerRUS7100 = new google.maps.Marker({
+
+    
+   position: {lat:53.7152   , lng:   91.4166       },
+
+      
+      map: map,
+
+      
+      title: ' Абакан   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7100 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2590%25D0%25B1%25D0%25B0%25D0%25BA%25D0%25B0%25D0%25BD%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&nofollow=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7100 = new google.maps.InfoWindow({
+     content: contentStringRUS7100,
+     maxWidth: 500
+  });
+markerRUS7100.addListener('click', function() {
+    infowindowRUS7100.open(map, markerRUS7100);
+  });//---------------------------------
+var markerRUS7101 = new google.maps.Marker({
+
+    
+   position: {lat:64.7291   , lng:   177.5167       },
+
+      
+      map: map,
+
+      
+      title: ' Анадырь  ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7101 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2590%25D0%25BD%25D0%25B0%25D0%25B4%25D1%258B%25D1%2580%25D1%258C%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&nofollow=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7101 = new google.maps.InfoWindow({
+     content: contentStringRUS7101,
+     maxWidth: 500
+  });
+markerRUS7101.addListener('click', function() {
+    infowindowRUS7101.open(map, markerRUS7101);
+  });//---------------------------------
+var markerRUS7102 = new google.maps.Marker({
+
+    
+   position: {lat:64.5459   , lng:   40.5334       },
+
+      
+      map: map,
+
+      
+      title: ' Архангельск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7102 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2590%25D1%2580%25D1%2585%25D0%25B0%25D0%25BD%25D0%25B3%25D0%25B5%25D0%25BB%25D1%258C%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&nofollow=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7102 = new google.maps.InfoWindow({
+     content: contentStringRUS7102,
+     maxWidth: 500
+  });
+markerRUS7102.addListener('click', function() {
+    infowindowRUS7102.open(map, markerRUS7102);
+  });//---------------------------------
+var markerRUS7103 = new google.maps.Marker({
+
+    
+   position: {lat:46.3267   , lng:   48.0333       },
+
+      
+      map: map,
+
+      
+      title: ' Астрахань  ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7103 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2590%25D1%2581%25D1%2582%25D1%2580%25D0%25B0%25D1%2585%25D0%25B0%25D0%25BD%25D1%258C%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7103 = new google.maps.InfoWindow({
+     content: contentStringRUS7103,
+     maxWidth: 500
+  });
+markerRUS7103.addListener('click', function() {
+    infowindowRUS7103.open(map, markerRUS7103);
+  });//---------------------------------
+var markerRUS7104 = new google.maps.Marker({
+
+    
+   position: {lat:53.3414   , lng:   83.7783       },
+
+      
+      map: map,
+
+      
+      title: ' Барнаул   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7104 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2591%25D0%25B0%25D1%2580%25D0%25BD%25D0%25B0%25D1%2583%25D0%25BB%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7104 = new google.maps.InfoWindow({
+     content: contentStringRUS7104,
+     maxWidth: 500
+  });
+markerRUS7104.addListener('click', function() {
+    infowindowRUS7104.open(map, markerRUS7104);
+  });//---------------------------------
+var markerRUS7105 = new google.maps.Marker({
+
+    
+   position: {lat:50.5938   , lng:   36.5999       },
+
+      
+      map: map,
+
+      
+      title: ' Белгород   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7105 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2591%25D0%25B5%25D0%25BB%25D0%25B3%25D0%25BE%25D1%2580%25D0%25BE%25D0%25B4%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7105 = new google.maps.InfoWindow({
+     content: contentStringRUS7105,
+     maxWidth: 500
+  });
+markerRUS7105.addListener('click', function() {
+    infowindowRUS7105.open(map, markerRUS7105);
+  });//---------------------------------
+var markerRUS7106 = new google.maps.Marker({
+
+    
+   position: {lat:50.2515   , lng:   127.5365       },
+
+      
+      map: map,
+
+      
+      title: ' Благовещенск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7106 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2591%25D0%25BB%25D0%25B0%25D0%25B3%25D0%25BE%25D0%25B2%25D0%25B5%25D1%2589%25D0%25B5%25D0%25BD%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7106 = new google.maps.InfoWindow({
+     content: contentStringRUS7106,
+     maxWidth: 500
+  });
+markerRUS7106.addListener('click', function() {
+    infowindowRUS7106.open(map, markerRUS7106);
+  });//---------------------------------
+var markerRUS7107 = new google.maps.Marker({
+
+    
+   position: {lat:53.2442   , lng:   34.3666       },
+
+      
+      map: map,
+
+      
+      title: ' Брянск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7107 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2591%25D1%2580%25D1%258F%25D0%25BD%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7107 = new google.maps.InfoWindow({
+     content: contentStringRUS7107,
+     maxWidth: 500
+  });
+markerRUS7107.addListener('click', function() {
+    infowindowRUS7107.open(map, markerRUS7107);
+  });//---------------------------------
+var markerRUS7108 = new google.maps.Marker({
+
+    
+   position: {lat:43.1096   , lng:   131.9001       },
+
+      
+      map: map,
+
+      
+      title: ' Владивосток  ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7108 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2592%25D0%25BB%25D0%25B0%25D0%25B4%25D0%25B8%25D0%25B2%25D0%25BE%25D1%2581%25D1%2582%25D0%25BE%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7108 = new google.maps.InfoWindow({
+     content: contentStringRUS7108,
+     maxWidth: 500
+  });
+markerRUS7108.addListener('click', function() {
+    infowindowRUS7108.open(map, markerRUS7108);
+  });//---------------------------------
+var markerRUS7109 = new google.maps.Marker({
+
+    
+   position: {lat:43.0095   , lng:   44.6835       },
+
+      
+      map: map,
+
+      
+      title: ' Владикавказ   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7109 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2592%25D0%25BB%25D0%25B0%25D0%25B4%25D0%25B8%25D0%25BA%25D0%25B0%25D0%25B2%25D0%25BA%25D0%25B0%25D0%25B7%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7109 = new google.maps.InfoWindow({
+     content: contentStringRUS7109,
+     maxWidth: 500
+  });
+markerRUS7109.addListener('click', function() {
+    infowindowRUS7109.open(map, markerRUS7109);
+  });//---------------------------------
+var markerRUS7110 = new google.maps.Marker({
+
+    
+   position: {lat:6666   , lng:     6666    },
+
+      
+      map: map,
+
+      
+      title: ' Владимир   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7110 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2592%25D0%25BB%25D0%25B0%25D0%25B4%25D0%25B8%25D0%25BC%25D0%25B8%25D1%2580%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7110 = new google.maps.InfoWindow({
+     content: contentStringRUS7110,
+     maxWidth: 500
+  });
+markerRUS7110.addListener('click', function() {
+    infowindowRUS7110.open(map, markerRUS7110);
+  });//---------------------------------
+var markerRUS7111 = new google.maps.Marker({
+
+    
+   position: {lat:48.7051   , lng:   44.5139       },
+
+      
+      map: map,
+
+      
+      title: ' Волгоград   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7111 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2592%25D0%25BE%25D0%25BB%25D0%25B3%25D0%25BE%25D0%25B3%25D1%2580%25D0%25B0%25D0%25B4%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7111 = new google.maps.InfoWindow({
+     content: contentStringRUS7111,
+     maxWidth: 500
+  });
+markerRUS7111.addListener('click', function() {
+    infowindowRUS7111.open(map, markerRUS7111);
+  });//---------------------------------
+var markerRUS7112 = new google.maps.Marker({
+
+    
+   position: {lat:59.2117   , lng:   39.8999       },
+
+      
+      map: map,
+
+      
+      title: ' Вологда  ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7112 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2592%25D0%25BE%25D0%25BB%25D0%25BE%25D0%25B3%25D0%25B4%25D0%25B0%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7112 = new google.maps.InfoWindow({
+     content: contentStringRUS7112,
+     maxWidth: 500
+  });
+markerRUS7112.addListener('click', function() {
+    infowindowRUS7112.open(map, markerRUS7112);
+  });//---------------------------------
+var markerRUS7113 = new google.maps.Marker({
+
+    
+   position: {lat:51.6701   , lng:   39.2105       },
+
+      
+      map: map,
+
+      
+      title: ' Воронеж   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7113 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2592%25D0%25BE%25D1%2580%25D0%25BE%25D0%25BD%25D0%25B5%25D0%25B6%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7113 = new google.maps.InfoWindow({
+     content: contentStringRUS7113,
+     maxWidth: 500
+  });
+markerRUS7113.addListener('click', function() {
+    infowindowRUS7113.open(map, markerRUS7113);
+  });//---------------------------------
+var markerRUS7114 = new google.maps.Marker({
+
+    
+   position: {lat:51.9585   , lng:   85.96       },
+
+      
+      map: map,
+
+      
+      title: ' Горно-Алтайск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7114 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2593%25D0%25BE%25D1%2580%25D0%25BD%25D0%25BE-%25D0%2590%25D0%25BB%25D1%2582%25D0%25B0%25D0%25B9%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7114 = new google.maps.InfoWindow({
+     content: contentStringRUS7114,
+     maxWidth: 500
+  });
+markerRUS7114.addListener('click', function() {
+    infowindowRUS7114.open(map, markerRUS7114);
+  });//---------------------------------
+var markerRUS7115 = new google.maps.Marker({
+
+    
+   position: {lat:43.3096   , lng:   45.7       },
+
+      
+      map: map,
+
+      
+      title: ' Грозный   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7115 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2593%25D1%2580%25D0%25BE%25D0%25B7%25D0%25BD%25D1%258B%25D0%25B9%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7115 = new google.maps.InfoWindow({
+     content: contentStringRUS7115,
+     maxWidth: 500
+  });
+markerRUS7115.addListener('click', function() {
+    infowindowRUS7115.open(map, markerRUS7115);
+  });//---------------------------------
+var markerRUS7116 = new google.maps.Marker({
+
+    
+   position: {lat:56.828   , lng:    60.5834      },
+
+      
+      map: map,
+
+      
+      title: ' Екатеринбург   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7116 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2595%25D0%25BA%25D0%25B0%25D1%2582%25D0%25B5%25D1%2580%25D0%25B8%25D0%25BD%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7116 = new google.maps.InfoWindow({
+     content: contentStringRUS7116,
+     maxWidth: 500
+  });
+markerRUS7116.addListener('click', function() {
+    infowindowRUS7116.open(map, markerRUS7116);
+  });//---------------------------------
+var markerRUS7117 = new google.maps.Marker({
+
+    
+   position: {lat:56.9896   , lng:   40.9804       },
+
+      
+      map: map,
+
+      
+      title: ' Иваново   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7117 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2598%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25BE%25D0%25B2%25D0%25BE%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7117 = new google.maps.InfoWindow({
+     content: contentStringRUS7117,
+     maxWidth: 500
+  });
+markerRUS7117.addListener('click', function() {
+    infowindowRUS7117.open(map, markerRUS7117);
+  });//---------------------------------
+var markerRUS7118 = new google.maps.Marker({
+
+    
+   position: {lat:56.8517   , lng:   53.2122       },
+
+      
+      map: map,
+
+      
+      title: ' Ижевск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7118 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2598%25D0%25B6%25D0%25B5%25D0%25B2%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7118 = new google.maps.InfoWindow({
+     content: contentStringRUS7118,
+     maxWidth: 500
+  });
+markerRUS7118.addListener('click', function() {
+    infowindowRUS7118.open(map, markerRUS7118);
+  });//---------------------------------
+var markerRUS7119 = new google.maps.Marker({
+
+    
+   position: {lat:52.2773   , lng:   104.3001       },
+
+      
+      map: map,
+
+      
+      title: ' Иркутск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7119 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2598%25D1%2580%25D0%25BA%25D1%2583%25D1%2582%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7119 = new google.maps.InfoWindow({
+     content: contentStringRUS7119,
+     maxWidth: 500
+  });
+markerRUS7119.addListener('click', function() {
+    infowindowRUS7119.open(map, markerRUS7119);
+  });//---------------------------------
+var markerRUS7120 = new google.maps.Marker({
+
+    
+   position: {lat:56.6301   , lng:   47.8958       },
+
+      
+      map: map,
+
+      
+      title: ' Йошкар-Ола   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7120 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%2599%25D0%25BE%25D1%2588%25D0%25BA%25D0%25B0%25D1%2580-%25D0%259E%25D0%25BB%25D0%25B0%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7120 = new google.maps.InfoWindow({
+     content: contentStringRUS7120,
+     maxWidth: 500
+  });
+markerRUS7120.addListener('click', function() {
+    infowindowRUS7120.open(map, markerRUS7120);
+  });//---------------------------------
+var markerRUS7121 = new google.maps.Marker({
+
+    
+   position: {lat:55.7854   , lng:   49.1144       },
+
+      
+      map: map,
+
+      
+      title: ' Казань  ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7121 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259A%25D0%25B0%25D0%25B7%25D0%25B0%25D0%25BD%25D1%258C%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7121 = new google.maps.InfoWindow({
+     content: contentStringRUS7121,
+     maxWidth: 500
+  });
+markerRUS7121.addListener('click', function() {
+    infowindowRUS7121.open(map, markerRUS7121);
+  });//---------------------------------
+var markerRUS7122 = new google.maps.Marker({
+
+    
+   position: {lat:54.711   , lng:    20.5001      },
+
+      
+      map: map,
+
+      
+      title: ' Калининград  ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7122 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259A%25D0%25B0%25D0%25BB%25D0%25B8%25D0%25BD%25D0%25B8%25D0%25BD%25D0%25B3%25D1%2580%25D0%25B0%25D0%25B4%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7122 = new google.maps.InfoWindow({
+     content: contentStringRUS7122,
+     maxWidth: 500
+  });
+markerRUS7122.addListener('click', function() {
+    infowindowRUS7122.open(map, markerRUS7122);
+  });//---------------------------------
+var markerRUS7123 = new google.maps.Marker({
+
+    
+   position: {lat:54.5319   , lng:   36.2666       },
+
+      
+      map: map,
+
+      
+      title: ' Калуга   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7123 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259A%25D0%25B0%25D0%25BB%25D1%2583%25D0%25B3%25D0%25B0%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7123 = new google.maps.InfoWindow({
+     content: contentStringRUS7123,
+     maxWidth: 500
+  });
+markerRUS7123.addListener('click', function() {
+    infowindowRUS7123.open(map, markerRUS7123);
+  });//---------------------------------
+var markerRUS7124 = new google.maps.Marker({
+
+    
+   position: {lat:55.3514   , lng:   86.0897       },
+
+      
+      map: map,
+
+      
+      title: ' Кемерово   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7124 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259A%25D0%25B5%25D0%25BC%25D0%25B5%25D1%2580%25D0%25BE%25D0%25B2%25D0%25BE%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7124 = new google.maps.InfoWindow({
+     content: contentStringRUS7124,
+     maxWidth: 500
+  });
+markerRUS7124.addListener('click', function() {
+    infowindowRUS7124.open(map, markerRUS7124);
+  });//---------------------------------
+var markerRUS7125 = new google.maps.Marker({
+
+    
+   position: {lat:6666   , lng:     66666    },
+
+      
+      map: map,
+
+      
+      title: ' Киров   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7125 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259A%25D0%25B8%25D1%2580%25D0%25BE%25D0%25B2%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7125 = new google.maps.InfoWindow({
+     content: contentStringRUS7125,
+     maxWidth: 500
+  });
+markerRUS7125.addListener('click', function() {
+    infowindowRUS7125.open(map, markerRUS7125);
+  });//---------------------------------
+var markerRUS7126 = new google.maps.Marker({
+
+    
+   position: {lat:57.7614   , lng:   40.9333       },
+
+      
+      map: map,
+
+      
+      title: ' Кострома   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7126 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259A%25D0%25BE%25D1%2581%25D1%2582%25D1%2580%25D0%25BE%25D0%25BC%25D0%25B0%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7126 = new google.maps.InfoWindow({
+     content: contentStringRUS7126,
+     maxWidth: 500
+  });
+markerRUS7126.addListener('click', function() {
+    infowindowRUS7126.open(map, markerRUS7126);
+  });//---------------------------------
+var markerRUS7127 = new google.maps.Marker({
+
+    
+   position: {lat:45.0263   , lng:   38.9833       },
+
+      
+      map: map,
+
+      
+      title: ' Краснодар   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7127 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259A%25D1%2580%25D0%25B0%25D1%2581%25D0%25BD%25D0%25BE%25D0%25B4%25D0%25B0%25D1%2580%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7127 = new google.maps.InfoWindow({
+     content: contentStringRUS7127,
+     maxWidth: 500
+  });
+markerRUS7127.addListener('click', function() {
+    infowindowRUS7127.open(map, markerRUS7127);
+  });//---------------------------------
+var markerRUS7128 = new google.maps.Marker({
+
+    
+   position: {lat:56.0065   , lng:   92.8712       },
+
+      
+      map: map,
+
+      
+      title: ' Красноярск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7128 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259A%25D1%2580%25D0%25B0%25D1%2581%25D0%25BD%25D0%25BE%25D1%258F%25D1%2580%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7128 = new google.maps.InfoWindow({
+     content: contentStringRUS7128,
+     maxWidth: 500
+  });
+markerRUS7128.addListener('click', function() {
+    infowindowRUS7128.open(map, markerRUS7128);
+  });//---------------------------------
+var markerRUS7129 = new google.maps.Marker({
+
+    
+   position: {lat:6666   , lng:     6666    },
+
+      
+      map: map,
+
+      
+      title: ' Курган   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7129 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259A%25D1%2583%25D1%2580%25D0%25B3%25D0%25B0%25D0%25BD%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7129 = new google.maps.InfoWindow({
+     content: contentStringRUS7129,
+     maxWidth: 500
+  });
+markerRUS7129.addListener('click', function() {
+    infowindowRUS7129.open(map, markerRUS7129);
+  });//---------------------------------
+var markerRUS7130 = new google.maps.Marker({
+
+    
+   position: {lat:51.7105   , lng:   36.1835       },
+
+      
+      map: map,
+
+      
+      title: ' Курск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7130 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259A%25D1%2583%25D1%2580%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7130 = new google.maps.InfoWindow({
+     content: contentStringRUS7130,
+     maxWidth: 500
+  });
+markerRUS7130.addListener('click', function() {
+    infowindowRUS7130.open(map, markerRUS7130);
+  });//---------------------------------
+var markerRUS7131 = new google.maps.Marker({
+
+    
+   position: {lat:51.6985   , lng:   94.3666       },
+
+      
+      map: map,
+
+      
+      title: ' Кызыл   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7131 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259A%25D1%258B%25D0%25B7%25D1%258B%25D0%25BB%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7131 = new google.maps.InfoWindow({
+     content: contentStringRUS7131,
+     maxWidth: 500
+  });
+markerRUS7131.addListener('click', function() {
+    infowindowRUS7131.open(map, markerRUS7131);
+  });//---------------------------------
+var markerRUS7132 = new google.maps.Marker({
+
+    
+   position: {lat:52.6107   , lng:   39.5999       },
+
+      
+      map: map,
+
+      
+      title: ' Липецк   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7132 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259B%25D0%25B8%25D0%25BF%25D0%25B5%25D1%2586%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7132 = new google.maps.InfoWindow({
+     content: contentStringRUS7132,
+     maxWidth: 500
+  });
+markerRUS7132.addListener('click', function() {
+    infowindowRUS7132.open(map, markerRUS7132);
+  });//---------------------------------
+var markerRUS7133 = new google.maps.Marker({
+
+    
+   position: {lat:59.5617   , lng:   150.8001       },
+
+      
+      map: map,
+
+      
+      title: ' Магадан   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7133 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259C%25D0%25B0%25D0%25B3%25D0%25B0%25D0%25B4%25D0%25B0%25D0%25BD%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7133 = new google.maps.InfoWindow({
+     content: contentStringRUS7133,
+     maxWidth: 500
+  });
+markerRUS7133.addListener('click', function() {
+    infowindowRUS7133.open(map, markerRUS7133);
+  });//---------------------------------
+var markerRUS7134 = new google.maps.Marker({
+
+    
+   position: {lat:43.1649   , lng:   44.8167       },
+
+      
+      map: map,
+
+      
+      title: ' Магас   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7134 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259C%25D0%25B0%25D0%25B3%25D0%25B0%25D1%2581%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7134 = new google.maps.InfoWindow({
+     content: contentStringRUS7134,
+     maxWidth: 500
+  });
+markerRUS7134.addListener('click', function() {
+    infowindowRUS7134.open(map, markerRUS7134);
+  });//---------------------------------
+var markerRUS7135 = new google.maps.Marker({
+
+    
+   position: {lat:44.6093   , lng:   40.111       },
+
+      
+      map: map,
+
+      
+      title: ' Майкоп   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7135 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259C%25D0%25B0%25D0%25B9%25D0%25BA%25D0%25BE%25D0%25BF%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7135 = new google.maps.InfoWindow({
+     content: contentStringRUS7135,
+     maxWidth: 500
+  });
+markerRUS7135.addListener('click', function() {
+    infowindowRUS7135.open(map, markerRUS7135);
+  });//---------------------------------
+var markerRUS7136 = new google.maps.Marker({
+
+    
+   position: {lat:42.9761   , lng:   47.5001       },
+
+      
+      map: map,
+
+      
+      title: ' Махачкала   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7136 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259C%25D0%25B0%25D1%2585%25D0%25B0%25D1%2587%25D0%25BA%25D0%25B0%25D0%25BB%25D0%25B0%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7136 = new google.maps.InfoWindow({
+     content: contentStringRUS7136,
+     maxWidth: 500
+  });
+markerRUS7136.addListener('click', function() {
+    infowindowRUS7136.open(map, markerRUS7136);
+  });//---------------------------------
+var markerRUS7137 = new google.maps.Marker({
+
+    
+   position: {lat:55.7504   , lng:   37.6179       },
+
+      
+      map: map,
+
+      
+      title: ' Москва   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7137 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7137 = new google.maps.InfoWindow({
+     content: contentStringRUS7137,
+     maxWidth: 500
+  });
+markerRUS7137.addListener('click', function() {
+    infowindowRUS7137.open(map, markerRUS7137);
+  });//---------------------------------
+var markerRUS7138 = new google.maps.Marker({
+
+    
+   position: {lat:68.9631   , lng:   33.0833       },
+
+      
+      map: map,
+
+      
+      title: ' Мурманск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7138 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259C%25D1%2583%25D1%2580%25D0%25BC%25D0%25B0%25D0%25BD%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7138 = new google.maps.InfoWindow({
+     content: contentStringRUS7138,
+     maxWidth: 500
+  });
+markerRUS7138.addListener('click', function() {
+    infowindowRUS7138.open(map, markerRUS7138);
+  });//---------------------------------
+var markerRUS7139 = new google.maps.Marker({
+
+    
+   position: {lat:43.4711   , lng:   43.6068       },
+
+      
+      map: map,
+
+      
+      title: ' Нальчик  ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7139 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259D%25D0%25B0%25D0%25BB%25D1%258C%25D1%2587%25D0%25B8%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7139 = new google.maps.InfoWindow({
+     content: contentStringRUS7139,
+     maxWidth: 500
+  });
+markerRUS7139.addListener('click', function() {
+    infowindowRUS7139.open(map, markerRUS7139);
+  });//---------------------------------
+var markerRUS7140 = new google.maps.Marker({
+
+    
+   position: {lat:67.6341   , lng:   53.0066       },
+
+      
+      map: map,
+
+      
+      title: ' Нарьян-Мар   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7140 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259D%25D0%25B0%25D1%2580%25D1%258C%25D1%258F%25D0%25BD-%25D0%259C%25D0%25B0%25D1%2580%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7140 = new google.maps.InfoWindow({
+     content: contentStringRUS7140,
+     maxWidth: 500
+  });
+markerRUS7140.addListener('click', function() {
+    infowindowRUS7140.open(map, markerRUS7140);
+  });//---------------------------------
+var markerRUS7141 = new google.maps.Marker({
+
+    
+   position: {lat:56.3216   , lng:   44.0075       },
+
+      
+      map: map,
+
+      
+      title: ' Нижний Новгород   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7141 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259D%25D0%25B8%25D0%25B6%25D0%25BD%25D0%25B8%25D0%25B9%2520%25D0%259D%25D0%25BE%25D0%25B2%25D0%25B3%25D0%25BE%25D1%2580%25D0%25BE%25D0%25B4%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7141 = new google.maps.InfoWindow({
+     content: contentStringRUS7141,
+     maxWidth: 500
+  });
+markerRUS7141.addListener('click', function() {
+    infowindowRUS7141.open(map, markerRUS7141);
+  });//---------------------------------
+var markerRUS7142 = new google.maps.Marker({
+
+    
+   position: {lat:58.52   , lng:     31.275     },
+
+      
+      map: map,
+
+      
+      title: ' Новгород   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7142 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259D%25D0%25BE%25D0%25B2%25D0%25B3%25D0%25BE%25D1%2580%25D0%25BE%25D0%25B4%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7142 = new google.maps.InfoWindow({
+     content: contentStringRUS7142,
+     maxWidth: 500
+  });
+markerRUS7142.addListener('click', function() {
+    infowindowRUS7142.open(map, markerRUS7142);
+  });//---------------------------------
+var markerRUS7143 = new google.maps.Marker({
+
+    
+   position: {lat:55.011   , lng:    82.9166      },
+
+      
+      map: map,
+
+      
+      title: ' Новосибирск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7143 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259D%25D0%25BE%25D0%25B2%25D0%25BE%25D1%2581%25D0%25B8%25D0%25B1%25D0%25B8%25D1%2580%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7143 = new google.maps.InfoWindow({
+     content: contentStringRUS7143,
+     maxWidth: 500
+  });
+markerRUS7143.addListener('click', function() {
+    infowindowRUS7143.open(map, markerRUS7143);
+  });//---------------------------------
+var markerRUS7144 = new google.maps.Marker({
+
+    
+   position: {lat:54.961   , lng:    73.3832      },
+
+      
+      map: map,
+
+      
+      title: ' Омск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7144 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259E%25D0%25BC%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7144 = new google.maps.InfoWindow({
+     content: contentStringRUS7144,
+     maxWidth: 500
+  });
+markerRUS7144.addListener('click', function() {
+    infowindowRUS7144.open(map, markerRUS7144);
+  });//---------------------------------
+var markerRUS7145 = new google.maps.Marker({
+
+    
+   position: {lat:6666   , lng:     6666    },
+
+      
+      map: map,
+
+      
+      title: ' Орел   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7145 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259E%25D1%2580%25D0%25B5%25D0%25BB%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7145 = new google.maps.InfoWindow({
+     content: contentStringRUS7145,
+     maxWidth: 500
+  });
+markerRUS7145.addListener('click', function() {
+    infowindowRUS7145.open(map, markerRUS7145);
+  });//---------------------------------
+var markerRUS7146 = new google.maps.Marker({
+
+    
+   position: {lat:51.7636   , lng:   55.1       },
+
+      
+      map: map,
+
+      
+      title: ' Оренбург   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7146 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259E%25D1%2580%25D0%25B5%25D0%25BD%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7146 = new google.maps.InfoWindow({
+     content: contentStringRUS7146,
+     maxWidth: 500
+  });
+markerRUS7146.addListener('click', function() {
+    infowindowRUS7146.open(map, markerRUS7146);
+  });//---------------------------------
+var markerRUS7147 = new google.maps.Marker({
+
+    
+   position: {lat:53.1942   , lng:   45       },
+
+      
+      map: map,
+
+      
+      title: ' Пенза   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7147 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259F%25D0%25B5%25D0%25BD%25D0%25B7%25D0%25B0%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7147 = new google.maps.InfoWindow({
+     content: contentStringRUS7147,
+     maxWidth: 500
+  });
+markerRUS7147.addListener('click', function() {
+    infowindowRUS7147.open(map, markerRUS7147);
+  });//---------------------------------
+var markerRUS7148 = new google.maps.Marker({
+
+    
+   position: {lat:58.0087   , lng:   56.249       },
+
+      
+      map: map,
+
+      
+      title: ' Пермь   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7148 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259F%25D0%25B5%25D1%2580%25D0%25BC%25D1%258C%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7148 = new google.maps.InfoWindow({
+     content: contentStringRUS7148,
+     maxWidth: 500
+  });
+markerRUS7148.addListener('click', function() {
+    infowindowRUS7148.open(map, markerRUS7148);
+  });//---------------------------------
+var markerRUS7149 = new google.maps.Marker({
+
+    
+   position: {lat:61.7915   , lng:   34.3491       },
+
+      
+      map: map,
+
+      
+      title: ' Петрозаводск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7149 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259F%25D0%25B5%25D1%2582%25D1%2580%25D0%25BE%25D0%25B7%25D0%25B0%25D0%25B2%25D0%25BE%25D0%25B4%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7149 = new google.maps.InfoWindow({
+     content: contentStringRUS7149,
+     maxWidth: 500
+  });
+markerRUS7149.addListener('click', function() {
+    infowindowRUS7149.open(map, markerRUS7149);
+  });//---------------------------------
+var markerRUS7150 = new google.maps.Marker({
+
+    
+   position: {lat:53.0051   , lng:   158.6501       },
+
+      
+      map: map,
+
+      
+      title: ' Петропавловск-Камчатский   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7150 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259F%25D0%25B5%25D1%2582%25D1%2580%25D0%25BE%25D0%25BF%25D0%25B0%25D0%25B2%25D0%25BB%25D0%25BE%25D0%25B2%25D1%2581%25D0%25BA-%25D0%259A%25D0%25B0%25D0%25BC%25D1%2587%25D0%25B0%25D1%2582%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7150 = new google.maps.InfoWindow({
+     content: contentStringRUS7150,
+     maxWidth: 500
+  });
+markerRUS7150.addListener('click', function() {
+    infowindowRUS7150.open(map, markerRUS7150);
+  });//---------------------------------
+var markerRUS7151 = new google.maps.Marker({
+
+    
+   position: {lat:57.8114   , lng:   28.3334       },
+
+      
+      map: map,
+
+      
+      title: ' Псков   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7151 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%259F%25D1%2581%25D0%25BA%25D0%25BE%25D0%25B2%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7151 = new google.maps.InfoWindow({
+     content: contentStringRUS7151,
+     maxWidth: 500
+  });
+markerRUS7151.addListener('click', function() {
+    infowindowRUS7151.open(map, markerRUS7151);
+  });//---------------------------------
+var markerRUS7152 = new google.maps.Marker({
+
+    
+   position: {lat:47.2339   , lng:   39.7104       },
+
+      
+      map: map,
+
+      
+      title: ' Ростов-на-Дону   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7152 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A0%25D0%25BE%25D1%2581%25D1%2582%25D0%25BE%25D0%25B2-%25D0%25BD%25D0%25B0-%25D0%2594%25D0%25BE%25D0%25BD%25D1%2583%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7152 = new google.maps.InfoWindow({
+     content: contentStringRUS7152,
+     maxWidth: 500
+  });
+markerRUS7152.addListener('click', function() {
+    infowindowRUS7152.open(map, markerRUS7152);
+  });//---------------------------------
+var markerRUS7153 = new google.maps.Marker({
+
+    
+   position: {lat:54.611   , lng:    39.7166      },
+
+      
+      map: map,
+
+      
+      title: ' Рязань   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7153 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A0%25D1%258F%25D0%25B7%25D0%25B0%25D0%25BD%25D1%258C%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7153 = new google.maps.InfoWindow({
+     content: contentStringRUS7153,
+     maxWidth: 500
+  });
+markerRUS7153.addListener('click', function() {
+    infowindowRUS7153.open(map, markerRUS7153);
+  });//---------------------------------
+var markerRUS7154 = new google.maps.Marker({
+
+    
+   position: {lat:66.5295   , lng:   66.6335       },
+
+      
+      map: map,
+
+      
+      title: ' Салехард   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7154 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A1%25D0%25B0%25D0%25BB%25D0%25B5%25D1%2585%25D0%25B0%25D1%2580%25D0%25B4%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7154 = new google.maps.InfoWindow({
+     content: contentStringRUS7154,
+     maxWidth: 500
+  });
+markerRUS7154.addListener('click', function() {
+    infowindowRUS7154.open(map, markerRUS7154);
+  });//---------------------------------
+var markerRUS7155 = new google.maps.Marker({
+
+    
+   position: {lat:53.1775   , lng:   50.1165       },
+
+      
+      map: map,
+
+      
+      title: ' Самара   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7155 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A1%25D0%25B0%25D0%25BC%25D0%25B0%25D1%2580%25D0%25B0%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7155 = new google.maps.InfoWindow({
+     content: contentStringRUS7155,
+     maxWidth: 500
+  });
+markerRUS7155.addListener('click', function() {
+    infowindowRUS7155.open(map, markerRUS7155);
+  });//---------------------------------
+var markerRUS7156 = new google.maps.Marker({
+
+    
+   position: {lat:59.9451   , lng:   30.3168       },
+
+      
+      map: map,
+
+      
+      title: ' Санкт-Петербург   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7156 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7156 = new google.maps.InfoWindow({
+     content: contentStringRUS7156,
+     maxWidth: 500
+  });
+markerRUS7156.addListener('click', function() {
+    infowindowRUS7156.open(map, markerRUS7156);
+  });//---------------------------------
+var markerRUS7157 = new google.maps.Marker({
+
+    
+   position: {lat:54.1776   , lng:   45.1833       },
+
+      
+      map: map,
+
+      
+      title: ' Саранск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7157 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A1%25D0%25B0%25D1%2580%25D0%25B0%25D0%25BD%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7157 = new google.maps.InfoWindow({
+     content: contentStringRUS7157,
+     maxWidth: 500
+  });
+markerRUS7157.addListener('click', function() {
+    infowindowRUS7157.open(map, markerRUS7157);
+  });//---------------------------------
+var markerRUS7158 = new google.maps.Marker({
+
+    
+   position: {lat:51.5272   , lng:   46.0001       },
+
+      
+      map: map,
+
+      
+      title: ' Саратов   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7158 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A1%25D0%25B0%25D1%2580%25D0%25B0%25D1%2582%25D0%25BE%25D0%25B2%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7158 = new google.maps.InfoWindow({
+     content: contentStringRUS7158,
+     maxWidth: 500
+  });
+markerRUS7158.addListener('click', function() {
+    infowindowRUS7158.open(map, markerRUS7158);
+  });//---------------------------------
+var markerRUS7159 = new google.maps.Marker({
+
+    
+   position: {lat:44.9411   , lng:   34.1043       },
+
+      
+      map: map,
+
+      
+      title: ' Симферополь   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7159 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A1%25D0%25B8%25D0%25BC%25D1%2584%25D0%25B5%25D1%2580%25D0%25BE%25D0%25BF%25D0%25BE%25D0%25BB%25D1%258C%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7159 = new google.maps.InfoWindow({
+     content: contentStringRUS7159,
+     maxWidth: 500
+  });
+markerRUS7159.addListener('click', function() {
+    infowindowRUS7159.open(map, markerRUS7159);
+  });//---------------------------------
+var markerRUS7160 = new google.maps.Marker({
+
+    
+   position: {lat:54.7772   , lng:   32.0454       },
+
+      
+      map: map,
+
+      
+      title: ' Смоленск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7160 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A1%25D0%25BC%25D0%25BE%25D0%25BB%25D0%25B5%25D0%25BD%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7160 = new google.maps.InfoWindow({
+     content: contentStringRUS7160,
+     maxWidth: 500
+  });
+markerRUS7160.addListener('click', function() {
+    infowindowRUS7160.open(map, markerRUS7160);
+  });//---------------------------------
+var markerRUS7161 = new google.maps.Marker({
+
+    
+   position: {lat:45.0263   , lng:   41.9667       },
+
+      
+      map: map,
+
+      
+      title: ' Ставрополь   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7161 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A1%25D1%2582%25D0%25B0%25D0%25B2%25D1%2580%25D0%25BE%25D0%25BF%25D0%25BE%25D0%25BB%25D1%258C%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7161 = new google.maps.InfoWindow({
+     content: contentStringRUS7161,
+     maxWidth: 500
+  });
+markerRUS7161.addListener('click', function() {
+    infowindowRUS7161.open(map, markerRUS7161);
+  });//---------------------------------
+var markerRUS7162 = new google.maps.Marker({
+
+    
+   position: {lat:61.6575   , lng:   50.8166       },
+
+      
+      map: map,
+
+      
+      title: ' Сыктывкар   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7162 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A1%25D1%258B%25D0%25BA%25D1%2582%25D1%258B%25D0%25B2%25D0%25BA%25D0%25B0%25D1%2580%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7162 = new google.maps.InfoWindow({
+     content: contentStringRUS7162,
+     maxWidth: 500
+  });
+markerRUS7162.addListener('click', function() {
+    infowindowRUS7162.open(map, markerRUS7162);
+  });//---------------------------------
+var markerRUS7163 = new google.maps.Marker({
+
+    
+   position: {lat:52.7108   , lng:   41.4332       },
+
+      
+      map: map,
+
+      
+      title: ' Тамбов   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7163 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A2%25D0%25B0%25D0%25BC%25D0%25B1%25D0%25BE%25D0%25B2%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7163 = new google.maps.InfoWindow({
+     content: contentStringRUS7163,
+     maxWidth: 500
+  });
+markerRUS7163.addListener('click', function() {
+    infowindowRUS7163.open(map, markerRUS7163);
+  });//---------------------------------
+var markerRUS7164 = new google.maps.Marker({
+
+    
+   position: {lat:56.8524   , lng:   35.9219       },
+
+      
+      map: map,
+
+      
+      title: ' Тверь   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7164 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A2%25D0%25B2%25D0%25B5%25D1%2580%25D1%258C%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7164 = new google.maps.InfoWindow({
+     content: contentStringRUS7164,
+     maxWidth: 500
+  });
+markerRUS7164.addListener('click', function() {
+    infowindowRUS7164.open(map, markerRUS7164);
+  });//---------------------------------
+var markerRUS7165 = new google.maps.Marker({
+
+    
+   position: {lat:56.4833   , lng:   84.9521       },
+
+      
+      map: map,
+
+      
+      title: ' Томск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7165 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A2%25D0%25BE%25D0%25BC%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7165 = new google.maps.InfoWindow({
+     content: contentStringRUS7165,
+     maxWidth: 500
+  });
+markerRUS7165.addListener('click', function() {
+    infowindowRUS7165.open(map, markerRUS7165);
+  });//---------------------------------
+var markerRUS7166 = new google.maps.Marker({
+
+    
+   position: {lat:54.1943   , lng:   37.6165       },
+
+      
+      map: map,
+
+      
+      title: ' Тула   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7166 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A2%25D1%2583%25D0%25BB%25D0%25B0%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7166 = new google.maps.InfoWindow({
+     content: contentStringRUS7166,
+     maxWidth: 500
+  });
+markerRUS7166.addListener('click', function() {
+    infowindowRUS7166.open(map, markerRUS7166);
+  });//---------------------------------
+var markerRUS7167 = new google.maps.Marker({
+
+    
+   position: {lat:57.1487   , lng:   65.5334       },
+
+      
+      map: map,
+
+      
+      title: ' Тюмень   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7167 = '   http://www.newsfiber.com/p/s/r?rv=2&lang=rus&r=100&a=1&dl=-1&i=1&q=%20%D0%A2%D1%8E%D0%BC%D0%B5%D0%BD%D1%8C%20&g=%2FSociety%2FWarfare%2F&n=rus&y=   ';
+  
+  var infowindowRUS7167 = new google.maps.InfoWindow({
+     content: contentStringRUS7167,
+     maxWidth: 500
+  });
+markerRUS7167.addListener('click', function() {
+    infowindowRUS7167.open(map, markerRUS7167);
+  });//---------------------------------
+var markerRUS7168 = new google.maps.Marker({
+
+    
+   position: {lat:51.8211   , lng:   107.6166       },
+
+      
+      map: map,
+
+      
+      title: ' Улан-Удэ   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7168 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A3%25D0%25BB%25D0%25B0%25D0%25BD-%25D0%25A3%25D0%25B4%25D1%258D%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7168 = new google.maps.InfoWindow({
+     content: contentStringRUS7168,
+     maxWidth: 500
+  });
+markerRUS7168.addListener('click', function() {
+    infowindowRUS7168.open(map, markerRUS7168);
+  });//---------------------------------
+var markerRUS7169 = new google.maps.Marker({
+
+    
+   position: {lat:54.311   , lng:    48.3666      },
+
+      
+      map: map,
+
+      
+      title: ' Ульяновск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7169 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A3%25D0%25BB%25D1%258C%25D1%258F%25D0%25BD%25D0%25BE%25D0%25B2%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7169 = new google.maps.InfoWindow({
+     content: contentStringRUS7169,
+     maxWidth: 500
+  });
+markerRUS7169.addListener('click', function() {
+    infowindowRUS7169.open(map, markerRUS7169);
+  });//---------------------------------
+var markerRUS7170 = new google.maps.Marker({
+
+    
+   position: {lat:54.7277   , lng:   55.9668       },
+
+      
+      map: map,
+
+      
+      title: ' Уфа   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7170 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A3%25D1%2584%25D0%25B0%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7170 = new google.maps.InfoWindow({
+     content: contentStringRUS7170,
+     maxWidth: 500
+  });
+markerRUS7170.addListener('click', function() {
+    infowindowRUS7170.open(map, markerRUS7170);
+  });//---------------------------------
+var markerRUS7171 = new google.maps.Marker({
+
+    
+   position: {lat:48.4769   , lng:   135.0666       },
+
+      
+      map: map,
+
+      
+      title: ' Хабаровск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7171 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A5%25D0%25B0%25D0%25B1%25D0%25B0%25D1%2580%25D0%25BE%25D0%25B2%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7171 = new google.maps.InfoWindow({
+     content: contentStringRUS7171,
+     maxWidth: 500
+  });
+markerRUS7171.addListener('click', function() {
+    infowindowRUS7171.open(map, markerRUS7171);
+  });//---------------------------------
+var markerRUS7172 = new google.maps.Marker({
+
+    
+   position: {lat:60.996   , lng:    69.0062      },
+
+      
+      map: map,
+
+      
+      title: ' Ханты-Мансийск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7172 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A5%25D0%25B0%25D0%25BD%25D1%2582%25D1%258B-%25D0%259C%25D0%25B0%25D0%25BD%25D1%2581%25D0%25B8%25D0%25B9%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7172 = new google.maps.InfoWindow({
+     content: contentStringRUS7172,
+     maxWidth: 500
+  });
+markerRUS7172.addListener('click', function() {
+    infowindowRUS7172.open(map, markerRUS7172);
+  });//---------------------------------
+var markerRUS7173 = new google.maps.Marker({
+
+    
+   position: {lat:56.1112   , lng:   47.2333       },
+
+      
+      map: map,
+
+      
+      title: ' Чебоксары   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7173 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A7%25D0%25B5%25D0%25B1%25D0%25BE%25D0%25BA%25D1%2581%25D0%25B0%25D1%2580%25D1%258B%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7173 = new google.maps.InfoWindow({
+     content: contentStringRUS7173,
+     maxWidth: 500
+  });
+markerRUS7173.addListener('click', function() {
+    infowindowRUS7173.open(map, markerRUS7173);
+  });//---------------------------------
+var markerRUS7174 = new google.maps.Marker({
+
+    
+   position: {lat:55.1566   , lng:   61.4029       },
+
+      
+      map: map,
+
+      
+      title: ' Челябинск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7174 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A7%25D0%25B5%25D0%25BB%25D1%258F%25D0%25B1%25D0%25B8%25D0%25BD%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7174 = new google.maps.InfoWindow({
+     content: contentStringRUS7174,
+     maxWidth: 500
+  });
+markerRUS7174.addListener('click', function() {
+    infowindowRUS7174.open(map, markerRUS7174);
+  });//---------------------------------
+var markerRUS7175 = new google.maps.Marker({
+
+    
+   position: {lat:44.2069   , lng:   42.0443       },
+
+      
+      map: map,
+
+      
+      title: ' Черкесск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7175 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A7%25D0%25B5%25D1%2580%25D0%25BA%25D0%25B5%25D1%2581%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7175 = new google.maps.InfoWindow({
+     content: contentStringRUS7175,
+     maxWidth: 500
+  });
+markerRUS7175.addListener('click', function() {
+    infowindowRUS7175.open(map, markerRUS7175);
+  });//---------------------------------
+var markerRUS7176 = new google.maps.Marker({
+
+    
+   position: {lat:52.0304   , lng:   113.4999       },
+
+      
+      map: map,
+
+      
+      title: ' Чита   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7176 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25A7%25D0%25B8%25D1%2582%25D0%25B0%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7176 = new google.maps.InfoWindow({
+     content: contentStringRUS7176,
+     maxWidth: 500
+  });
+markerRUS7176.addListener('click', function() {
+    infowindowRUS7176.open(map, markerRUS7176);
+  });//---------------------------------
+var markerRUS7177 = new google.maps.Marker({
+
+    
+   position: {lat:46.315   , lng:    44.2667      },
+
+      
+      map: map,
+
+      
+      title: ' Элиста   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7177 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25AD%25D0%25BB%25D0%25B8%25D1%2581%25D1%2582%25D0%25B0%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7177 = new google.maps.InfoWindow({
+     content: contentStringRUS7177,
+     maxWidth: 500
+  });
+markerRUS7177.addListener('click', function() {
+    infowindowRUS7177.open(map, markerRUS7177);
+  });//---------------------------------
+var markerRUS7178 = new google.maps.Marker({
+
+    
+   position: {lat:46.9433   , lng:   142.7333       },
+
+      
+      map: map,
+
+      
+      title: ' Южно-Сахалинск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7178 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25AE%25D0%25B6%25D0%25BD%25D0%25BE-%25D0%25A1%25D0%25B0%25D1%2585%25D0%25B0%25D0%25BB%25D0%25B8%25D0%25BD%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7178 = new google.maps.InfoWindow({
+     content: contentStringRUS7178,
+     maxWidth: 500
+  });
+markerRUS7178.addListener('click', function() {
+    infowindowRUS7178.open(map, markerRUS7178);
+  });//---------------------------------
+var markerRUS7179 = new google.maps.Marker({
+
+    
+   position: {lat:62.0226   , lng:   129.7321       },
+
+      
+      map: map,
+
+      
+      title: ' Якутск   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7179 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25AF%25D0%25BA%25D1%2583%25D1%2582%25D1%2581%25D0%25BA%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7179 = new google.maps.InfoWindow({
+     content: contentStringRUS7179,
+     maxWidth: 500
+  });
+markerRUS7179.addListener('click', function() {
+    infowindowRUS7179.open(map, markerRUS7179);
+  });//---------------------------------
+var markerRUS7180 = new google.maps.Marker({
+
+    
+   position: {lat:57.6115   , lng:   39.8502       },
+
+      
+      map: map,
+
+      
+      title: ' Ярославль   ',
+
+     
+      icon: 'https://img.icons8.com/ios/25/000000/us-news-filled.png'
+  });
+
+  var contentStringRUS7180 = '   <iframe width="350" height="500" frameborder="100%" class="rssdog" src="https://www.rssdog.com/index.php?url=http%3A%2F%2Fwww.newsfiber.com%2Fp%2Fs%2Fr%3Frv%3D2%26lang%3Drus%26r%3D100%26a%3D1%26dl%3D-1%26i%3D1%26q%3D%2520%25D0%25AF%25D1%2580%25D0%25BE%25D1%2581%25D0%25BB%25D0%25B0%25D0%25B2%25D0%25BB%25D1%258C%2520%26g%3D%252FSociety%252FWarfare%252F%26n%3Drus%26y%3D&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=0&descmax=0&tabwidth=100%25&excltitle=1&showdate=1&utf8=1&linktarget=_blank&textsize=inherit&bordercol=%23d4d0c8&headbgcol=%23999999&headtxtcol=%23ffffff&titlebgcol=%23f1eded&titletxtcol=%23000000&itembgcol=%23ffffff&itemtxtcol=%23000000&ctl=0"></iframe>   ';
+  
+  var infowindowRUS7180 = new google.maps.InfoWindow({
+     content: contentStringRUS7180,
+     maxWidth: 500
+  });
+markerRUS7180.addListener('click', function() {
+    infowindowRUS7180.open(map, markerRUS7180);
+  });//---------------------------------
+    }
+        </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+  </body>
+</html>
