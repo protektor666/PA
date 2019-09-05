@@ -1353,6 +1353,9 @@ var marker51 = new google.maps.Marker({
   });
 marker51.addListener('click', function() {
     infowindow51.open(map, marker51);
+   var time = 6000; 
+setInterval(function() {infowindow51.open(map, marker51);
+}, time);
   });
     //---------------------------------
 
